@@ -4,7 +4,6 @@
 /* eslint-disable no-console */
 import { ErrorRequestHandler, NextFunction, Request, Response } from "express";
 import config from "../config";
-import { errorLogger } from "../utils/helpers/logger.util";
 import { IGenericErrorMessage } from "../types/error";
 import handleValidationError from "../utils/errors/handleValidationError.util";
 import { ZodError } from "zod";
@@ -15,7 +14,7 @@ import ApiError from "../utils/errors/apiError.util";
 const globalErrorHandler:ErrorRequestHandler = (error ,req:Request, res:Response, next:NextFunction) => {
 
     config.env === "development" ?
-      console.log("🔥 globalErrorHandler ~ " , error) : errorLogger.error("🔥 globalErrorHandler ~ " , error)
+      console.log("🔥 globalErrorHandler ~ " , error) : console.error("🔥 globalErrorHandler ~ " , error)
 
     let statusCode = 500;
     let message = 'Something went wrong !';
