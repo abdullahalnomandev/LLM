@@ -23,7 +23,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
   const userInfo = getUserInfo() as IUserInfo;
-  
+
   const user = {
     role: userInfo?.role, // admin | teacher | student
   };
@@ -31,18 +31,19 @@ export default function Navbar() {
   const mainNav = [
     { name: "Home", href: "/" },
     { name: "Courses", href: "/courses" },
-    ...(user.role === "admin" ? [{ name: "Dashboard", href: "/admin/dashboard" }] : []),
+    ...(user.role === "admin"
+      ? [{ name: "Dashboard", href: "/admin/dashboard" }]
+      : []),
   ];
 
+  const adminMenuItems = [
+    { name: "Manage Courses", href: "/admin/course", icon: HiAcademicCap },
+    { name: "Dashboard", href: "/admin/dashboard", icon: HiCog },
+  ];
+  const userMenuItems = [
+    { name: "My Courses", href: "/courses", icon: HiAcademicCap },
+  ];
 
-const adminMenuItems =  [
-      { name: "Manage Courses", href: "/admin/course", icon: HiAcademicCap },
-      { name: "Dashboard", href: "/admin/dashboard", icon: HiCog },
-    ];
-const userMenuItems =  [
-      { name: "My Courses", href: "/courses", icon: HiAcademicCap },
-    ];
-  
   const handleLogout = () => {
     logOutUser(router);
   };
@@ -114,7 +115,10 @@ const userMenuItems =  [
                   {userMenuOpen && (
                     <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-200 py-2 animate-in slide-in-from-top-2 duration-200">
                       <div className="py-2">
-                        {(userInfo.role === 'user' ? userMenuItems : adminMenuItems).map((item) => {
+                        {(userInfo.role === "user"
+                          ? userMenuItems
+                          : adminMenuItems
+                        ).map((item) => {
                           const IconComponent = item.icon;
                           return (
                             <Link
@@ -178,6 +182,7 @@ const userMenuItems =  [
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 shadow-sm">
           <div className="mx-auto px-4 py-4" style={{ maxWidth: "1280px" }}>
+            {/* Main Navigation */}
             <div className="space-y-1 mb-6">
               {mainNav.map((item) => (
                 <Link
@@ -191,42 +196,64 @@ const userMenuItems =  [
               ))}
             </div>
 
-            <div className="border-t border-gray-100 pt-4">
-              <div className="flex items-center space-x-2 px-4 py-3 mb-4 bg-gray-50 rounded-lg">
-                <HiUser className="w-8 h-8 text-gray-600" />
-                <p className="text-sm font-semibold text-gray-900 capitalize">
-                  {user.role}
-                </p>
+            {/* User Info & Menu */}
+            {userInfo ? (
+              <div className="border-t border-gray-100 pt-4">
+                <div className="flex items-center space-x-2 px-4 py-3 mb-4 bg-gray-50 rounded-lg">
+                  <HiUser className="w-8 h-8 text-gray-600" />
+                  <p className="text-sm font-semibold text-gray-900 capitalize">
+                    {user.role}
+                  </p>
+                </div>
+
+                <div className="space-y-1">
+                  {(user.role === "admin" ? adminMenuItems : userMenuItems).map(
+                    (item) => {
+                      const IconComponent = item.icon;
+                      return (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className="flex items-center space-x-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 rounded-lg transition-colors duration-200"
+                          onClick={() => setIsOpen(false)}
+                        >
+                          <IconComponent className="w-5 h-5 text-gray-400" />
+                          <span>{item.name}</span>
+                        </Link>
+                      );
+                    }
+                  )}
+
+                  <button
+                    onClick={() => {
+                      handleLogout();
+                      setIsOpen(false);
+                    }}
+                    className="flex items-center space-x-3 px-4 py-3 text-sm text-red-600 hover:bg-red-50 rounded-lg transition-colors duration-200 w-full text-left"
+                  >
+                    <HiLogout className="w-5 h-5" />
+                    <span>Sign Out</span>
+                  </button>
+                </div>
               </div>
-
-              <div className="space-y-1">
-                {userMenuItems.map((item) => {
-                  const IconComponent = item.icon;
-                  return (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center space-x-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 rounded-lg transition-colors duration-200"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      <IconComponent className="w-5 h-5 text-gray-400" />
-                      <span>{item.name}</span>
-                    </Link>
-                  );
-                })}
-
-                <button
-                  onClick={() => {
-                    handleLogout();
-                    setIsOpen(false);
-                  }}
-                  className="flex items-center space-x-3 px-4 py-3 text-sm text-red-600 hover:bg-red-50 rounded-lg transition-colors duration-200 w-full text-left"
+            ) : (
+              <div className="border-t border-gray-100 pt-4 space-y-2">
+                <Link
+                  href="/auth/login"
+                  className="block px-4 py-2 bg-blue-600 text-center text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                  onClick={() => setIsOpen(false)} 
                 >
-                  <HiLogout className="w-5 h-5" />
-                  <span>Sign Out</span>
-                </button>
+                  Login
+                </Link>
+                <Link
+                  href="/auth/register"
+                  className="block px-4 py-2 bg-blue-600 text-center text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Register
+                </Link>
               </div>
-            </div>
+            )}
           </div>
         </div>
       )}
