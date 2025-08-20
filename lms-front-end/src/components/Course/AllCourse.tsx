@@ -32,7 +32,7 @@ export default function AllCourseCard({ courses }: AllCourseCardProps) {
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-gray-900 mt-6 mb-4">All Courses</h1>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {(courses ?? []).map(
+        {(courses)?.map(
           ({ _id, thumbnail, title, description, module, lecture, price }) => (
             <div
               key={_id}
