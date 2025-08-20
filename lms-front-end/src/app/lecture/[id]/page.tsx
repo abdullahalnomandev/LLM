@@ -1,5 +1,4 @@
 import Lecture from '@/components/Lacture/Lecture'
-import { getAllLectureAccess } from '@/services/lectureAccessService'
 import { getModules } from '@/services/moduleService'
 import React from 'react'
 
