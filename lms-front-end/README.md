@@ -23,6 +23,10 @@ The application is designed to be responsive, user-friendly, and efficient, offe
 - **Responsive Design**: Optimized for various devices and screen sizes.
 - **Authentication & Authorization**: Secure access to course content and administrative functions.
 
+## Live Demo
+
+Explore the live demo of the LMS Frontend here: [https://llm-9l98.vercel.app/](https://llm-9l98.vercel.app/)
+
 ## Getting Started
 
 ### Prerequisites
