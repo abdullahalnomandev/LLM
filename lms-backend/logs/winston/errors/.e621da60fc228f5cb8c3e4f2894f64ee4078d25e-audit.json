@@ -1,0 +1,200 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\.e621da60fc228f5cb8c3e4f2894f64ee4078d25e-audit.json",
+    "files": [
+        {
+            "date": 1755131985648,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-14-08-06-error.log",
+            "hash": "0c3ead15470f156e26c9dd40eebf4bc7c490bbaa2029eaf47d3d5fc2d9904591"
+        },
+        {
+            "date": 1755134179062,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-14-08-07-error.log",
+            "hash": "8aca426d542449ba77e5eb59bacf894b7fcd0b7592457a9564533a40ad3b2edb"
+        },
+        {
+            "date": 1755158381150,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-14-08-13-error.log",
+            "hash": "b6680a7781ebe1b7ef0235682fa1490f553b64bd23009e648ee1d5db7894f35e"
+        },
+        {
+            "date": 1755159673954,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-14-08-14-error.log",
+            "hash": "e458519b0eb6189f441c085438181e75862ff15b3818c4fa331eb4b28147696a"
+        },
+        {
+            "date": 1755163412584,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-14-08-15-error.log",
+            "hash": "4b4a53bc693e8369f27313820dc2c1dbae6a5a251cb499eed92b41123d311b60"
+        },
+        {
+            "date": 1755172267979,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-14-08-17-error.log",
+            "hash": "023150f2df25a9436f447e4b7ec05a87c22bc0223413f789bd3ff6e79d674a7f"
+        },
+        {
+            "date": 1755173268555,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-14-08-18-error.log",
+            "hash": "c4a79cf39ca9ca5107e818408925631f7e03bdc3ccb1bb5a57b7c1885e894e4c"
+        },
+        {
+            "date": 1755177708209,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-14-08-19-error.log",
+            "hash": "eb4e7c5ddc4eb91ac4876c3fd5bf052499153b4dfdb9da6c85983e51547a7563"
+        },
+        {
+            "date": 1755217348893,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-15-08-06-error.log",
+            "hash": "c8e0628023483da4ab970698b59a3cbd7c188d76689dc27ce8ba434521614258"
+        },
+        {
+            "date": 1755224008649,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-15-08-08-error.log",
+            "hash": "e5906ee5c63e022ef259752cb6e15a50a36e78a04e1d79d4e65595ae76e1aa8e"
+        },
+        {
+            "date": 1755263857547,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-15-08-19-error.log",
+            "hash": "3d40256c48872f452813f06eba2fadc4d5da92ff75962fd3d6b3803df73a3cdd"
+        },
+        {
+            "date": 1755353794385,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-16-08-20-error.log",
+            "hash": "1b0400b4680794f7d7ede238170abc4527db404a07ab828c784eebe880867f1e"
+        },
+        {
+            "date": 1755379148073,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-17-08-03-error.log",
+            "hash": "57758a61aaceb6200f4d9130d82a318953990af48bdd4b537aa5252dc610fe42"
+        },
+        {
+            "date": 1755390555931,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-17-08-06-error.log",
+            "hash": "714ade3e3164a8e2e849683286d15b124a6c9fcf0894d1d5092fd88ce3d27258"
+        },
+        {
+            "date": 1755427089293,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-17-08-16-error.log",
+            "hash": "b01ed05ec30a437092e4dcb356a17385f74a91978368608fec0ef6b774b76af7"
+        },
+        {
+            "date": 1755440444507,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-17-08-20-error.log",
+            "hash": "7fa3c0c9bbce78b19d7198736b4034774702646bd04369b6a274f2046822372f"
+        },
+        {
+            "date": 1755443442929,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-17-08-21-error.log",
+            "hash": "128d601bc25b37e3f32a389c4d1574dd2cece5e88c41ef1804e9aeda2cbc0bd9"
+        },
+        {
+            "date": 1755469414498,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-18-08-04-error.log",
+            "hash": "82474626e8e1fdbbe709d63078d0d45417cdaad9f0c25513fb2706bb85f93786"
+        },
+        {
+            "date": 1755490563367,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-18-08-10-error.log",
+            "hash": "afacba52a3cd6ba1f10adc6f5a94e634dd9b157c71cfc754e1f004138846ba7e"
+        },
+        {
+            "date": 1755498606041,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-18-08-12-error.log",
+            "hash": "754933a04b36eee7d7c8594d25b48d49dcafc810f6eeb03690a05be7253ddda7"
+        },
+        {
+            "date": 1755525912897,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-18-08-20-error.log",
+            "hash": "8e1cf7f6bebeee31456970e9ef719546801760252d33e6b40bdd7b15cd7d6a11"
+        },
+        {
+            "date": 1755532724165,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-18-08-21-error.log",
+            "hash": "a2d36c1140ca837e7c3c4fd650ea2b3132a25b242581656d879a7e7124c5436c"
+        },
+        {
+            "date": 1755532857069,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-18-08-22-error.log",
+            "hash": "6d54a1740fd904d9c45287161f81e3bb4de6ee2fa1e435e8037e0fc3dd882c44"
+        },
+        {
+            "date": 1755539153560,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-18-08-23-error.log",
+            "hash": "c3df6307cac4fc8667864fb3fb2725b981ec1f30470b61943da4a32fdfdf444e"
+        },
+        {
+            "date": 1755572582865,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-19-08-09-error.log",
+            "hash": "eddf2664ab0898836839b92f16f9e5ba92794094118b2ea689230974b71ed649"
+        },
+        {
+            "date": 1755583396491,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-19-08-12-error.log",
+            "hash": "d6af860b46214ff08d22df43b4ef3a8912a1f599f346dee0e67bc0b731eed456"
+        },
+        {
+            "date": 1755586826289,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-19-08-13-error.log",
+            "hash": "6c418150e98d92fb94e31157d2289dae4f3ac0e1f73747a204ae56d2026258f6"
+        },
+        {
+            "date": 1755590405213,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-19-08-14-error.log",
+            "hash": "63c1f99ed1b50b6852300e9889b8150b9f4ac0323ad037fc38ded137858ec76c"
+        },
+        {
+            "date": 1755603876248,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-19-08-17-error.log",
+            "hash": "1130b2ccd7b99d39136327017d6e62a8e5750c9b4f991c571d4e9f779a729248"
+        },
+        {
+            "date": 1755610880531,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-19-08-19-error.log",
+            "hash": "e80187c30cf4ec765f71f5575acca775775229cd0aa004536da313214c765f41"
+        },
+        {
+            "date": 1755612228667,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-19-08-20-error.log",
+            "hash": "3253f43b3154339801f8fe33df775831bfe96a1ea1b774ddc81e68aaac8e9beb"
+        },
+        {
+            "date": 1755649082617,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-20-08-06-error.log",
+            "hash": "bc4e46c36c6f034834b8b7d41ebd6f6abd29ec186b510f93243858f0d896ba8a"
+        },
+        {
+            "date": 1755653481748,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-20-08-07-error.log",
+            "hash": "7c548f76107f5229af24a3e9ebcdb5f46b669f05c37f82a49df71b9acfb2e059"
+        },
+        {
+            "date": 1755655453561,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-20-08-08-error.log",
+            "hash": "beff0eae5d9ce9a22a1c9eedd4d544a47b5807f063c1a6bd787fdc00d61c1452"
+        },
+        {
+            "date": 1755660210192,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-20-08-09-error.log",
+            "hash": "f95b66cf07aee34b4a640ac92bdbb0e40c5281213b2d4548736a18f3ce21111b"
+        },
+        {
+            "date": 1755669902550,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-20-08-12-error.log",
+            "hash": "565562f6ed12e11d24558a28c574090374887e983af573fdb496539995ff6e25"
+        },
+        {
+            "date": 1755676292166,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-20-08-13-error.log",
+            "hash": "8840aa276d19763a06cdb53c1c0154bab93edd9a43e22f9273858329ccdb0294"
+        },
+        {
+            "date": 1755692751167,
+            "name": "D:\\task\\LMS\\lms-backend\\logs\\winston\\errors\\shadi-mubarak-2025-20-08-18-error.log",
+            "hash": "d180f4b703348bde3c5a47ddbdb50a34c345a544a7f61884f4b2fae4ed27462c"
+        }
+    ],
+    "hashType": "sha256"
+}
