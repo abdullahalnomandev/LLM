@@ -1,3 +1,4 @@
+"use client";
 import CourseDetails from '@/components/Course/CourseDetails';
 import { getCourseById } from '@/services/courseService';
 import { getModules } from '@/services/moduleService';

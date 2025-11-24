@@ -1,5 +1,5 @@
 // lib/api.ts
-export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:9000/api';
 
 type FetchOptions = {
   method?: string;
@@ -21,7 +21,7 @@ async function request<T>(endpoint: string, options: FetchOptions = {}): Promise
   if (!res.ok) {
     throw new Error(`API error: ${res.status}`);
   }
-
+  
   return res.json();
 }
 

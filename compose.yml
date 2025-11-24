@@ -1,0 +1,43 @@
+services:
+  mongodb:
+    image: "mongo"
+    volumes:
+      - ts-docker-db:/data/db
+    env_file:
+      - ./lms-backend/.env
+
+
+  ts-docker-back-end-container:
+    build:
+      context: ./lms-backend
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    volumes:
+      - ts-dockers-logs:/app/logs #?named volume
+      - ./lms-backend:/app #?bind mount
+      - /app/node_modules #? anonymous volume
+    env_file:
+      - ./lms-backend/.env
+    depends_on:
+      - mongodb
+    
+
+
+  ts-docker-front-end-container:
+    build:
+      context: ./lms-front-end
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./lms-front-end:/app  #?bind mount
+    env_file:
+      - ./lms-front-end/.env.local
+    depends_on:
+      - ts-docker-back-end-container
+
+ 
+volumes:
+  ts-docker-db:
+  ts-dockers-logs:
