@@ -4,7 +4,7 @@
   "description": "This is shadi mumbarak app . This app used for online marriage ",
   "main": "src/server.ts",
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "start": "node api.js && ts-node-dev --respawn --transpile-only src/server.ts",
     "lint:check": "eslint --ext .js,.ts .",
     "lint:fix": "eslint . --fix",
     "prettier:check": "prettier --ignore-path .gitignore --check \"**/*.+(js|ts|json)\"",

@@ -2,20 +2,20 @@ services:
   mongodb:
     image: "mongo"
     volumes:
-      - ts-docker-db:/data/db
+      - ts-docker-db:/data/db  # !ts-docker-db নামে একটি named volume ব্যবহার করছে যেখানে MongoDB ডাটাগুলো সেভ থাকবে। ! অর্থাৎ Container delete হলেও data ডিলিট হবে না।
     env_file:
       - ./lms-backend/.env
 
 
   ts-docker-back-end-container:
     build:
-      context: ./lms-backend
-      dockerfile: Dockerfile
+      context: ./lms-backend # !Backend folder থেকে Docker build করবে।
+      dockerfile: Dockerfile # !ওই ফোল্ডারের Dockerfile ব্যবহার করবে।
     ports:
-      - "9000:9000"
+      - "9000:9000" # !লোকালহোস্ট :9000 → Container-এর 9000 পোর্ট।  Backend এই পোর্টে রান করবে।
     volumes:
-      - ts-dockers-logs:/app/logs #?named volume
-      - ./lms-backend:/app #?bind mount
+      - ts-dockers-logs:/app/logs #! logs ফোল্ডারটি named volume → লগগুলো Container remove হলেও থাকবে।
+      - ./lms-backend:/app # ! Bind mount → লোকাল কোড Container-এ ম্যাপ করা। কোড পরিবর্তন করলে Container-এর ভিতরও সাথে সাথে আপডেট হবে।
       - /app/node_modules #? anonymous volume
     env_file:
       - ./lms-backend/.env
@@ -31,7 +31,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./lms-front-end:/app  #?bind mount
+      - ./lms-front-end:/app  #! Frontend কোড আপডেট করলে Container-এ রিফ্রেশ হবে।
     env_file:
       - ./lms-front-end/.env.local
     depends_on:
